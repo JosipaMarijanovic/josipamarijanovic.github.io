@@ -38,7 +38,7 @@ a {
 
 .wordmark {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: -0.04em;
     text-decoration: none;
 }
@@ -95,9 +95,46 @@ h1 {
     padding-bottom: 92px;
 }
 
+.storytelling-gallery {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 560px);
+    justify-content: center;
+    gap: 18px;
+    padding-top: 34px;
+    padding-bottom: 20px;
+}
+
+.gallery-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
 .project {
     min-width: 0;
     text-decoration: none;
+}
+
+.storytelling-gallery .project {
+    display: block;
+    max-width: 560px;
+    width: 100%;
+}
+
+.storytelling-gallery .image-wrap {
+    aspect-ratio: 1.8;
+}
+
+.project-photo-only .project-topline,
+.project-photo-only h2,
+.project-photo-only p {
+    display: none;
 }
 
 .image-wrap {
@@ -199,12 +236,40 @@ footer {
     margin: 0 0 66px;
 }
 
+.storytelling-project-header {
+    width: 100%;
+    min-height: 56px;
+    margin: 0;
+    padding: 0 clamp(22px, 3.33vw, 48px);
+    position: relative;
+    z-index: 3;
+    justify-content: flex-end;
+    background: #fbbb0c;
+    border-bottom: 0;
+}
+
+.storytelling-project-page {
+    background: #fbbb0c;
+}
+
+.storytelling-project-page .DKvgGQ {
+    background-color: #fbbb0c;
+    box-shadow: none;
+}
+
+.storytelling-project-header .back-link {
+    font-size: 16px;
+}
+
+.image-only-main .detail-hero {
+    margin: 0;
+}
+
 .detail-hero img {
     width: 100%;
-    max-height: 620px;
+    height: auto;
     display: block;
-    aspect-ratio: 1.8;
-    object-fit: cover;
+    object-fit: contain;
     background: #e4e0d7;
 }
 
@@ -269,6 +334,10 @@ footer {
         min-height: 76px;
     }
 
+    .storytelling-project-header {
+        min-height: 48px;
+    }
+
     .intro {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -302,10 +371,6 @@ footer {
         margin-bottom: 48px;
     }
 
-    .detail-hero img {
-        aspect-ratio: 1.18;
-    }
-
     .detail-content {
         grid-template-columns: 1fr;
         gap: 18px;
@@ -314,6 +379,7 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {

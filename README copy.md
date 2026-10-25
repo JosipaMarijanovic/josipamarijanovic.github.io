@@ -1,2 +1,0 @@
-# josipa-marijanovic
-personal website
