@@ -6,6 +6,7 @@
 <meta name=build-version content=2297994a6bbe29f676264ae41dcfb3468b62b2f5>
 <meta name=build-release-name content=20261026-07-2297994>
 <meta name=build-deployment-group content=STABLE>
+<link rel="icon" type="image/x-icon" href="../../icons/favicon.svg">
 <meta name=viewport
     content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <style>
@@ -8050,16 +8051,32 @@
             transform: rotate(720deg)
         }
     }
+
+    .storytelling-project-header {
+       width: 100%;
+    min-height: 56px;
+    margin: 0;
+    padding: 0 clamp(22px, 3.33vw, 48px);
+    position: absolute !important;
+    z-index: 3;
+    justify-content: flex-end;
+    background: #fbbb0c00 !important;
+    border-bottom: 0; 
+    }
 </style>
 <style>
     .sf-hidden {
         display: none !important
     }
 </style>
-<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 
 <body>
+     
     <div class=AiJqmA>
+        <header class="topbar storytelling-project-header">
+        <a class="back-link" href="../storytelling.html">← Storytelling</a>
+    </header>
         <div class=kMDoBQ>
             <div class=wjS_DQ style=padding-top:0px;padding-bottom:0px>
                 <div class=CAi1bQ>
@@ -8149,12 +8166,7 @@
                                                     <div class=PcHy7w>
                                                         <div class="uk_25A Ty61NA">
                                                             <div class=H5qArQ>
-                                                                <div class=Izwocg
-                                                                    style="width:83.6116px;height:59.7823px;transform:translate(0px) rotate(0deg)">
-                                                                    <img class=_7_i_XA crossorigin=anonymous
-                                                                        draggable=false alt="Book icon in line style"
-                                                                        src=data:image/png;base64,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>
-                                                                </div>
+                                                                
                                                             </div>
                                                         </div>
                                                     </div>
