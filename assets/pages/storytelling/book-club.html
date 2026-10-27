@@ -8,7 +8,7 @@
 <meta name=build-deployment-group content=STABLE>
 <link rel="icon" type="image/x-icon" href="../../icons/favicon.svg">
 <meta name=viewport
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>
     :root {
         --sf-img-7: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAyADIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDiPCsy3TX6qSY0nYLnsPSuM8eXlxqWvS6bayP9nt8LsjBO9+5IHXk4Fa3w8v8AGsXUMkgPn5cE9zmuz+DdrpS+LfEOr6nJCr28oSNpSMLvLEkZ/i4xUGnQ8p1PwXrGnWolu9Mu4I8gmR04weevSo9CumgvHtblwqkjY0h4/PtX114w1e2tdMjC2Rv4J1O7acrt+mCTn0A/KvmT4ieHZ9J1aMyWskNpeRme0DISyr/EhHXI/kRTEdTa6BbW8fnT38XmYzsXH86wr+3t/wC2omgukkAGCi9ai0/R7m1ezt9bt2EN2oa1uFkDxSr/ALLKSOOmOo70a9o48OuNTsiFVD+8jbkGkM0/KHoaKzovEfmRpILcfMA350UDujkNEvPsWpQTNktE+CB1xXovwhjsdQ8YX2m6nNJGLr97EUcoWdWJKn8Dn/gNcMvhrUrcS3UtlLlRv3delVLO/nt7q0vrOQw3aSBonA6MD1NMk+y4khsLtYfKIgRgd74CBCP7xPXI6e9ZPjzQV159PZFuFe1n89JrWcQyQjaQXViCMgdu9YHwy8T23judzcafPHqNnGqzAjdDknghvfnjrXSfE3xXbeDdBbN3bxatcLttkdS4B/vMBzgdh3OBSEY3jXTIF+HV9PGvnyWgjvY7iZQrSbcMZGAHyuVLBiACcc14r44v1vPCcrBWRxjcpOevQg9wa77xf41sD8L49Mh1Oe81kWISeQo3Mh5YljwTya8dub2XUPD7WbAbuiSZ425yBj8/zoGiCyY/Y4OP+Wa/yoqS1QpbRI2NyoAefaimB6NJd31zpGooJS0nlfLtHIryt980rwMpjaMkq2OAOelexaLfxX1reFLVYWEJyy9681v7ES+cBI6c5GDwDzSQzpPCviXU/D1isfh2+uLaF8OwUA72wASwYewrC1nXtW1fW727vdlzeyME82UfwDoqjoo+nfNPht/ItreIhXkSMDzCcCkDbrtEmZN4DMuPbqcUCEubjC5JVV7hl4P+NUbcRiAeXwg+6Part5LHCDKzDocDrVOB9lqHY8kZOaaATd70UkUU8kauF4YA0UwPSfDYxBfY/wCeNcZqIxcyY9v5UUVCGRWPzQuG5APAPaoIQP7TlOBkYUH0GOlFFMRXuPmml3c9ufpUN7xZtjj5RRRTQF61/wCPaL/cH8qKKKQH/9k=");
@@ -8081,6 +8081,170 @@
         font-family: "Courier New", Courier, monospace !important;
         text-align: justify !important;
     }
+
+    .mobile-book-club {
+        display: none
+    }
+
+    @media (max-width:599.9px) {
+        html,
+        body {
+            height: auto;
+            min-height: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            overscroll-behavior-y: auto;
+            -webkit-overflow-scrolling: touch;
+            touch-action: pan-y pinch-zoom;
+            background: #f1ede4
+        }
+
+        body {
+            display: block;
+            color: #261e17;
+            font-family: "Canva Sans", Arial, sans-serif;
+            background: #f1ede4 !important;
+            touch-action: pan-y pinch-zoom
+        }
+
+        body > .AiJqmA {
+            display: none
+        }
+
+        .mobile-book-club {
+            display: block;
+            min-height: 100vh;
+            padding: 0 20px 40px;
+            touch-action: pan-y pinch-zoom
+        }
+
+        .mobile-book-club-header,
+        .mobile-book-club-main {
+            max-width: 560px;
+            margin: 0 auto
+        }
+
+        .mobile-book-club-header {
+            display: flex;
+            align-items: center;
+            min-height: 56px
+        }
+
+        .mobile-book-club-header a {
+            color: inherit;
+            font-size: 16px;
+            text-decoration: none
+        }
+
+        .mobile-book-club-hero {
+            padding: 28px 0 36px
+        }
+
+        .mobile-book-club-cover {
+            max-height: 360px;
+            margin: 0 0 28px;
+            background: #fff
+        }
+
+        .mobile-book-club-cover img {
+            display: block;
+            width: 100%;
+            max-height: 360px;
+            object-fit: contain
+        }
+
+        .mobile-book-club-eyebrow,
+        .mobile-book-club-number {
+            margin: 0 0 12px;
+            color: #662028;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase
+        }
+
+        .mobile-book-club h1,
+        .mobile-book-club h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: 400;
+            letter-spacing: -.04em
+        }
+
+        .mobile-book-club h1 {
+            margin: 0;
+            font-size: clamp(38px, 11vw, 56px);
+            line-height: 1
+        }
+
+        .mobile-book-club h2 {
+            margin: 0 0 18px;
+            font-size: 34px;
+            line-height: 1.05
+        }
+
+        .mobile-book-club p {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 17px;
+            line-height: 1.65;
+            text-align: justify
+        }
+
+        .mobile-book-club-section {
+            padding: 32px 0;
+            border-top: 1px solid #bd6908
+        }
+
+        .mobile-book-club-section p {
+            margin: 0 0 14px
+        }
+
+        .mobile-book-club-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 20px
+        }
+
+        .mobile-book-club-gallery figure {
+            aspect-ratio: 4 / 5;
+            margin: 0;
+            overflow: hidden;
+            background: #fff
+        }
+
+        .mobile-book-club-gallery img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .mobile-book-club-palette {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0 0;
+            padding: 0;
+            list-style: none
+        }
+
+        .mobile-book-club-palette li {
+            padding: 9px 12px;
+            border: 1px solid #261e17;
+            border-radius: 999px;
+            font-size: 14px
+        }
+
+        .mobile-book-club-outcome {
+            padding: 22px;
+            background: #2f4731;
+            color: #fff
+        }
+
+        .mobile-book-club-outcome p:last-child {
+            margin-bottom: 0
+        }
+    }
 </style>
 <link rel="stylesheet" href="../../../styles.css">
 
@@ -11593,6 +11757,71 @@
             </div>
         </div>
     </div>
+    <main class="mobile-book-club">
+        <header class="mobile-book-club-header">
+            <a href="../storytelling.html">← Storytelling</a>
+        </header>
+        <div class="mobile-book-club-main">
+            <section class="mobile-book-club-hero">
+                <figure class="mobile-book-club-cover"></figure>
+                <p class="mobile-book-club-eyebrow">Odense International Book Club</p>
+                <h1>Without identity?</h1>
+            </section>
+
+            <section class="mobile-book-club-section">
+                <p class="mobile-book-club-number">01 / The idea</p>
+                <h2>What is a book club without identity?</h2>
+                <p>Imagine a place where you gather with people who appreciate the same activity, enjoy discussing it, and share your passion. For a bookworm, that place is a book club.</p>
+                <p>Odense International Book Club needed a visual identity to share its existence and invite new readers into the community.</p>
+            </section>
+
+            <section class="mobile-book-club-section">
+                <p class="mobile-book-club-number">02 / Values and visuals</p>
+                <h2>Values and visuals</h2>
+                <p>The club brings people together around classic books translated into English, sharing readers’ opinions and impressions over a warm drink. The first sketch was designed to reflect these values.</p>
+                <div class="mobile-book-club-gallery" data-gallery-pages="2"></div>
+            </section>
+
+            <section class="mobile-book-club-section">
+                <p class="mobile-book-club-number">03 / Color palette</p>
+                <h2>Color palette</h2>
+                <p>Warm book tones and thoughtful, intelligent discussions shape the club’s visual palette.</p>
+                <ul class="mobile-book-club-palette">
+                    <li>#FFE1BD</li>
+                    <li>#261E17</li>
+                    <li>#BD6908</li>
+                    <li>#662028</li>
+                    <li>#2F4731</li>
+                </ul>
+            </section>
+
+            <section class="mobile-book-club-section">
+                <p class="mobile-book-club-number">04 / Imagery style</p>
+                <h2>Imagery style</h2>
+                <p>The artwork respects the chosen colors while expressing the book club’s classic, moody, and mystical character.</p>
+                <div class="mobile-book-club-gallery" data-gallery-pages="4"></div>
+            </section>
+
+            <section class="mobile-book-club-section">
+                <p class="mobile-book-club-number">05 / Event and presentation</p>
+                <h2>Bringing the identity to life</h2>
+                <p>The club presented its activities at an International Days event in Odense’s Main Library. Printed materials gave the identity a voice and helped introduce the club to new readers.</p>
+                <div class="mobile-book-club-gallery" data-gallery-pages="5"></div>
+            </section>
+
+            <section class="mobile-book-club-section">
+                <p class="mobile-book-club-number">06 / Effect today</p>
+                <h2>A community with a voice</h2>
+                <p>A planned, structured identity made a difference: the club could communicate its character, attract more than 50 new members at an event, and grow to around 1,000 members.</p>
+                <div class="mobile-book-club-gallery" data-gallery-pages="6,7"></div>
+            </section>
+
+            <section class="mobile-book-club-section mobile-book-club-outcome">
+                <h2>Books bring people together.</h2>
+                <p>Thoughtful identity design can spark curiosity, strengthen an organisation, and bring people together around a shared love of reading.</p>
+            </section>
+        </div>
+    </main>
     <style>
         html,
         body {
@@ -11600,6 +11829,39 @@
         }
     </style>
     <script>
+        const mobileBookClubCover = document.querySelector(".mobile-book-club-cover");
+        const firstBookClubPage = document.querySelector(".DPPJ_A");
+        const coverSource = firstBookClubPage?.querySelector("._14BoqA img");
+        if (mobileBookClubCover && coverSource) {
+            const cover = coverSource.cloneNode();
+            cover.removeAttribute("class");
+            cover.removeAttribute("style");
+            cover.alt = "Odense International Book Club cover";
+            mobileBookClubCover.append(cover);
+        }
+
+        document.querySelectorAll(".mobile-book-club-gallery").forEach((gallery) => {
+            const sourcePages = (gallery.dataset.galleryPages ?? "")
+                .split(",")
+                .map((index) => document.querySelectorAll(".DPPJ_A")[Number(index)])
+                .filter(Boolean);
+
+            sourcePages.forEach((sourcePage) => {
+                sourcePage.querySelectorAll("._14BoqA img").forEach((sourceImage) => {
+                    if (sourceImage.naturalWidth < 250) return;
+
+                    const figure = document.createElement("figure");
+                    const image = sourceImage.cloneNode();
+                    image.removeAttribute("class");
+                    image.removeAttribute("style");
+                    image.alt = "Book club identity and event materials";
+                    image.loading = "lazy";
+                    figure.append(image);
+                    gallery.append(figure);
+                });
+            });
+        });
+
         function fitSlidesToViewport() {
             const viewport = document.querySelector(".wjS_DQ");
             const viewportWidth = viewport

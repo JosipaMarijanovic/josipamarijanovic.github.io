@@ -11,7 +11,7 @@
 <meta name=build-deployment-group content=STABLE>
 <link rel="icon" type="image/x-icon" href="../../icons/favicon.svg">
 <meta name=viewport
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>
     :root {
         --sf-img-25: url("data:image/webp;base64,UklGRoYDAABXRUJQVlA4WAoAAAAQAAAAkwAAOgAAQUxQSCYDAAABoEVtmyFJ+rPaHNu2bRtr27ZtjG3b9swaY9u27az3IqKcEdcRMQESi6nl2z/z3o8Dpy5btmqtumzJuJ4fP9O+Wn5HTJxY6dGfpq0+RfgvLx/yZpPsBvGVf37o5ttE55GZb1VwDFD2zdkXifJTU57N4WWJ7YYeJvQ7Rzf/OX3Irz98ov2y2+iF64/dDg64+8fbhb0p6YGJFwn++tqx3zzdpEi8hDVntae7Lj4WBOD/66kUz6nZ/xzBXv27y/0lfRL57E0/XHAlAHBxUC0vyXhjK0He/O3DavESxfH1Pl/u6oA1D/o8oli/ywTeO6BTmsRg3lcW39LBnleSPaDc2DsEPNKlksRutjfW6+Dkx6kxVn6ai/7iiKY+ifFq/c9r4Ngr8TGUb+gd9CueSBYvTHv7gAZ2tI6VhI8uo707voZ4ZvwTGzUwu1hMNNyO9tbwEuKpTocNGq69Fxd1aX1cVHdkYfFc3+P7FFhVIcqa7EX7Xw3x5OQvripcf8uJooQuLuqhRx3x6kKzFFiUK2oKrkK92yVVvPzBEwqHakZJw5OoexuIx2ebonDj2ah45iaAf3C6eP/Tl1D7x0fuG9RT7cSIpbYqzEuNkNMXdW0hMWT6NIUVOSPi9EOdnSrGdD65C7CzaCR+RR0eLya95zrA4RLh+wXA/4kYttF5gAMFwvaRH3hHjFv+MMC2nOGSV1w+EwMX3g+wMWu45OkvxcgljgP8nhAuY1c8B9DHMqT2FYDnLUM6uMD1GpYhXwDsz7AMZwrAMMuQjB0AnS1Dat4GTuWyDPkKYJht+P4B3FqWIeVuA/87liF9Ae61jWxngPWOZcj7AB2CcEpYQeopYEWgzttP+GxAPgaopUkbCzSxgvSLwFAl41+A/lYg/YErGSLOHNSNdlAJ4HmRjwFuf5FiB7ICmC3V7gBXm4rps1asUTFDRD4EriYvAfwdxPC/7gfw7+hSvDRAd4D+YvpRBLzb/xj6y7mM1z5QsN+I8RPPh3Y9q/nksdb5sxW6d6obxASxx5r7ArW0CMm1S3fSZxNS5qZmmNjlD5r2lpF5FbiWbBnSc9/WtX0kIFZQOCA6AAAA0AQAnQEqlAA7AD5JJJFGIqIhoSDIAFAJCWkAAAY3upvo2oc4ygHupvo2oc4yf6AA/v02aAAAAAAAAA==")
@@ -6916,6 +6916,176 @@
 </script>
 
 <link rel="stylesheet" href="../../../styles.css">
+<style>
+    .mobile-pie-project {
+        display: none
+    }
+
+    @media (max-width:599.9px) {
+        html,
+        body {
+            height: auto;
+            min-height: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            overscroll-behavior-y: auto;
+            -webkit-overflow-scrolling: touch;
+            touch-action: pan-y pinch-zoom;
+            background: #f1ede4
+        }
+
+        body {
+            display: block;
+            color: #2b261f;
+            font-family: Arial, sans-serif;
+            touch-action: pan-y pinch-zoom
+        }
+
+        body.storytelling-project-page {
+            background: #f1ede4
+        }
+
+        body > .AiJqmA,
+        body > .storytelling-project-header {
+            display: none
+        }
+
+        .mobile-pie-project {
+            display: block;
+            min-height: 100vh;
+            padding: 0 20px 40px;
+            background: #f1ede4;
+            touch-action: pan-y pinch-zoom
+        }
+
+        .mobile-pie-header,
+        .mobile-pie-main {
+            max-width: 560px;
+            margin: 0 auto
+        }
+
+        .mobile-pie-header {
+            display: flex;
+            align-items: center;
+            min-height: 56px
+        }
+
+        .mobile-pie-header a {
+            color: inherit;
+            font-size: 16px;
+            text-decoration: none
+        }
+
+        .mobile-pie-hero {
+            padding: 44px 0 36px
+        }
+
+        .mobile-pie-eyebrow,
+        .mobile-pie-number {
+            margin: 0 0 12px;
+            color: #8d6e34;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase
+        }
+
+        .mobile-pie-project h1,
+        .mobile-pie-project h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: 400;
+            letter-spacing: -.04em
+        }
+
+        .mobile-pie-project h1 {
+            margin: 0 0 16px;
+            font-size: clamp(40px, 12vw, 60px);
+            line-height: .98
+        }
+
+        .mobile-pie-project h2 {
+            margin: 0 0 18px;
+            font-size: 34px;
+            line-height: 1.05
+        }
+
+        .mobile-pie-project p {
+            font-size: 17px;
+            line-height: 1.65
+        }
+
+        .mobile-pie-section {
+            padding: 32px 0;
+            border-top: 1px solid #8d6e34
+        }
+
+        .mobile-pie-section p {
+            margin: 0 0 14px
+        }
+
+        .mobile-pie-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 20px
+        }
+
+        .mobile-pie-gallery figure {
+            aspect-ratio: 4 / 5;
+            margin: 0;
+            overflow: hidden;
+            background: #fff
+        }
+
+        .mobile-pie-gallery img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .mobile-pie-points {
+            display: grid;
+            gap: 10px;
+            margin: 20px 0 0;
+            padding: 0;
+            list-style: none
+        }
+
+        .mobile-pie-points li {
+            padding: 16px;
+            background: #fff;
+            font-size: 16px;
+            line-height: 1.5
+        }
+
+        .mobile-pie-attributes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 20px 0 0;
+            padding: 0;
+            list-style: none
+        }
+
+        .mobile-pie-attributes li {
+            padding: 9px 12px;
+            border: 1px solid #8d6e34;
+            border-radius: 999px;
+            font-size: 14px
+        }
+
+        .mobile-pie-outcome {
+            padding: 24px;
+            background: #8d6e34;
+            color: #fff
+        }
+
+        .mobile-pie-outcome p:last-child {
+            margin-bottom: 0
+        }
+    }
+</style>
 
 <body class="storytelling-project-page">
     <header class="topbar storytelling-project-header">
@@ -10400,6 +10570,86 @@
             
         </div>
     </div>
-        
+    <main class="mobile-pie-project">
+        <header class="mobile-pie-header">
+            <a href="../storytelling.html">← Storytelling</a>
+        </header>
+        <div class="mobile-pie-main">
+            <section class="mobile-pie-hero">
+                <p class="mobile-pie-eyebrow">Brand strategy / Bakery</p>
+                <h1>Mediterranean pie bakery in the heart of Denmark</h1>
+                <p>A refreshed identity for The Pie Project, balancing its Mediterranean roots with the expectations of a Scandinavian audience.</p>
+            </section>
+
+            <section class="mobile-pie-section">
+                <p class="mobile-pie-number">01 / The challenge</p>
+                <h2>Finding the right balance</h2>
+                <ul class="mobile-pie-points">
+                    <li>Adapt the brand for the Scandinavian market while preserving its Mediterranean roots.</li>
+                    <li>Communicate the value of handmade products and fair pricing.</li>
+                    <li>Connect the bakery’s identity with its menu and in-store experience.</li>
+                    <li>Turn digital attention into visits to the bakery.</li>
+                </ul>
+            </section>
+
+            <section class="mobile-pie-section">
+                <p class="mobile-pie-number">02 / Brand direction</p>
+                <h2>Warm, handmade, and clear</h2>
+                <p>The identity combines the warmth and color of Mediterranean baking with a more considered, clear expression for its new audience.</p>
+                <ul class="mobile-pie-attributes">
+                    <li>Warm</li>
+                    <li>Handmade</li>
+                    <li>Traditional</li>
+                    <li>Colorful</li>
+                    <li>Clear</li>
+                    <li>Modern</li>
+                </ul>
+                <div class="mobile-pie-gallery" data-gallery-pages="3,4"></div>
+            </section>
+
+            <section class="mobile-pie-section">
+                <p class="mobile-pie-number">03 / Product and brand alignment</p>
+                <h2>A menu that reflects the craft</h2>
+                <p>The recreated menu makes the offering easier to understand, aligns prices with the value of homemade goods, and preserves the bakery’s traditional character.</p>
+                <div class="mobile-pie-gallery" data-gallery-pages="5"></div>
+            </section>
+
+            <section class="mobile-pie-section">
+                <p class="mobile-pie-number">04 / Digital to physical</p>
+                <h2>From discovery to the bakery</h2>
+                <p>Special events and social content introduce the bakery’s new style and encourage people to visit in person.</p>
+                <div class="mobile-pie-gallery" data-gallery-pages="6"></div>
+            </section>
+
+            <section class="mobile-pie-section mobile-pie-outcome">
+                <h2>Still baking in Denmark</h2>
+                <p>The Pie Project remains open and successfully operates in the heart of Denmark.</p>
+                <div class="mobile-pie-gallery" data-gallery-pages="7"></div>
+            </section>
+        </div>
+    </main>
+    <script>
+        document.querySelectorAll(".mobile-pie-gallery").forEach((gallery) => {
+            const sourcePages = (gallery.dataset.galleryPages ?? "")
+                .split(",")
+                .map((index) => document.querySelectorAll(".DPPJ_A")[Number(index)])
+                .filter(Boolean);
+
+            sourcePages.forEach((sourcePage) => {
+                sourcePage.querySelectorAll("._14BoqA img").forEach((sourceImage) => {
+                    if (sourceImage.naturalWidth < 180) return;
+
+                    const figure = document.createElement("figure");
+                    const image = sourceImage.cloneNode();
+                    image.removeAttribute("class");
+                    image.removeAttribute("style");
+                    image.alt = "The Pie Project branding and bakery photography";
+                    image.loading = "lazy";
+                    figure.append(image);
+                    gallery.append(figure);
+                });
+            });
+        });
+    </script>
     </body>
 </html>
