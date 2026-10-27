@@ -7954,14 +7954,18 @@
             height: auto;
             min-height: 100%;
             overflow-x: hidden;
-            overflow-y: auto;
-            background: #fbbb0c
+            overflow-y: scroll;
+            overscroll-behavior-y: auto;
+            -webkit-overflow-scrolling: touch;
+            touch-action: pan-y;
+            background: #ede5d4
         }
 
         body {
             display: block;
             color: #402410;
-            font-family: "Canva Sans", Arial, sans-serif
+            font-family: "Canva Sans", Arial, sans-serif;
+            touch-action: pan-y
         }
 
         body > .AiJqmA {
@@ -7971,7 +7975,8 @@
         .mobile-story {
             display: block;
             min-height: 100vh;
-            padding: 0 20px 40px
+            padding: 0 20px 40px;
+            touch-action: pan-y
         }
 
         .mobile-story-header {
