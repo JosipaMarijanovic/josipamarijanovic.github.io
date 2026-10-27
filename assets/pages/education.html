@@ -490,7 +490,8 @@
     }
 
     .gn2rjg {
-        box-shadow: 0 4px 32px -14px #40576d4d
+        border: 0;
+        box-shadow: none
     }
 
     ._14BoqA {
@@ -500,7 +501,7 @@
     }
 
     .DKvgGQ {
-        background-color: #fff
+        background-color: rgb(246, 244, 239)
     }
 
     .O7cuCw {
@@ -8856,7 +8857,7 @@
                                                 were
                                                 structured
                                                 into
-                                                tree
+                                                three
                                                 different
                                                 fields:
                                                 Philosophy,
@@ -10144,6 +10145,40 @@
         </div>
 
     </div>
+    <script>
+        const fitPagesToViewport = () => {
+            const width = document.documentElement.clientWidth;
+
+            document.querySelectorAll(".DPPJ_A").forEach((page) => {
+                const design = page.firstElementChild;
+                if (!design) return;
+
+                const designWidth = Number.parseFloat(design.style.width);
+                const designHeight = Number.parseFloat(design.style.height);
+                if (!designWidth || !designHeight || !width) return;
+
+                const scale = width / designWidth;
+                const height = designHeight * scale;
+                page.style.setProperty("width", `${width}px`, "important");
+                page.style.setProperty("height", `${height}px`, "important");
+                design.style.setProperty("transform", `scale(${scale})`, "important");
+                design.style.transformOrigin = "0 0";
+
+                const slide = page.parentElement?.parentElement;
+                const overlay = Array.from(slide?.children ?? []).find((child) =>
+                    child.classList.contains("zEapAQ")
+                );
+                if (overlay) {
+                    overlay.style.setProperty("width", `${width}px`, "important");
+                    overlay.style.setProperty("height", `${height}px`, "important");
+                    overlay.style.overflow = "hidden";
+                }
+            });
+        };
+
+        window.addEventListener("resize", fitPagesToViewport);
+        fitPagesToViewport();
+    </script>
 </body>
 
 </html>

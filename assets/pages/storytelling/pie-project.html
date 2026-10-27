@@ -6897,6 +6897,16 @@
                 page.style.width = `${width}px`;
                 page.style.height = `${designHeight * scale}px`;
                 design.style.transform = `scale(${scale})`;
+
+                const slide = page.parentElement && page.parentElement.parentElement;
+                const overlay = slide && Array.from(slide.children).find((child) =>
+                    child.classList.contains("zEapAQ")
+                );
+                if (overlay) {
+                    overlay.style.width = `${width}px`;
+                    overlay.style.height = `${designHeight * scale}px`;
+                    overlay.style.overflow = "hidden";
+                }
             });
         };
 

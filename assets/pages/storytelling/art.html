@@ -9,7 +9,7 @@
 <link rel="icon" type="image/x-icon" href="../../icons/favicon.svg">
 <link rel="stylesheet" href="../../../styles.css">
 <meta name=viewport
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style title=preload-css>
     html {
         --safe-area-inset-top: 0px
@@ -494,7 +494,7 @@
     }
 
     .gn2rjg {
-        box-shadow: 0 4px 32px -14px #40576d4d
+        box-shadow: none
     }
 
     ._14BoqA {
@@ -7943,6 +7943,191 @@
     ._14BoqA {
         transform: scale(calc(100vw / 1366px)) !important
     }
+
+    .mobile-story {
+        display: none
+    }
+
+    @media (max-width:599.9px) {
+        html,
+        body {
+            height: auto;
+            min-height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background: #fbbb0c
+        }
+
+        body {
+            display: block;
+            color: #402410;
+            font-family: "Canva Sans", Arial, sans-serif
+        }
+
+        body > .AiJqmA {
+            display: none
+        }
+
+        .mobile-story {
+            display: block;
+            min-height: 100vh;
+            padding: 0 20px 40px
+        }
+
+        .mobile-story-header {
+            display: flex;
+            align-items: center;
+            min-height: 56px;
+            max-width: 560px;
+            margin: 0 auto
+        }
+
+        .mobile-story-header a {
+            color: inherit;
+            font-size: 16px;
+            text-decoration: none
+        }
+
+        .mobile-story-main {
+            max-width: 560px;
+            margin: 0 auto
+        }
+
+        .mobile-story-hero {
+            padding: 44px 0 36px
+        }
+
+        .mobile-story-eyebrow {
+            margin: 0 0 12px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase
+        }
+
+        .mobile-story h1,
+        .mobile-story h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-weight: 400;
+            letter-spacing: -.04em
+        }
+
+        .mobile-story h1 {
+            margin: 0 0 20px;
+            font-size: clamp(42px, 13vw, 64px);
+            line-height: .98
+        }
+
+        .mobile-story p {
+            font-size: 17px;
+            line-height: 1.65
+        }
+
+        .mobile-story-intro {
+            max-width: 42em;
+            margin: 0
+        }
+
+        .mobile-story-note {
+            margin: 30px 0 0;
+            padding: 24px;
+            background: #275075;
+            color: #fff;
+        }
+
+        .mobile-story-note p {
+            margin: 0
+        }
+
+        .mobile-story-note p + p {
+            margin-top: 12px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 25px;
+            line-height: 1.2
+        }
+
+        .mobile-story-section {
+            padding: 36px 0
+        }
+
+        .mobile-story h2 {
+            margin: 0 0 20px;
+            font-size: 36px;
+            line-height: 1.05
+        }
+
+        .mobile-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px
+        }
+
+        .mobile-gallery figure {
+            aspect-ratio: 4 / 5;
+            margin: 0;
+            overflow: hidden;
+            background: #f5ead5
+        }
+
+        .mobile-gallery img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .mobile-story-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 20px 0 0;
+            padding: 0;
+            list-style: none
+        }
+
+        .mobile-story-tags li {
+            padding: 9px 12px;
+            border: 1px solid #402410;
+            border-radius: 999px;
+            font-size: 14px
+        }
+
+        .mobile-testimonials {
+            display: grid;
+            gap: 12px
+        }
+
+        .mobile-testimonials blockquote {
+            margin: 0;
+            padding: 20px;
+            background: #fff8e9
+        }
+
+        .mobile-testimonials blockquote p {
+            margin: 0 0 12px
+        }
+
+        .mobile-testimonials cite {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700
+        }
+
+        .mobile-story-contact {
+            margin-top: 16px;
+            padding: 24px;
+            background: #402410;
+            color: #fff8e9
+        }
+
+        .mobile-story-contact h2 {
+            margin-bottom: 12px
+        }
+
+        .mobile-story-contact p {
+            margin: 0
+        }
+    }
 </style>
 
 <body>
@@ -9470,6 +9655,108 @@
         </div>
        
     </div>
+    <main class="mobile-story">
+        <header class="mobile-story-header">
+            <a href="../storytelling.html">← Storytelling</a>
+        </header>
+        <div class="mobile-story-main">
+            <section class="mobile-story-hero">
+                <p class="mobile-story-eyebrow">Art &amp; storytelling</p>
+                <h1>Futura Free.dk</h1>
+                <p class="mobile-story-intro">At Futura Free, art is homemade and handmade. Memories and personal ideas take physical form through a fluid artistic vision and devoted attention to detail.</p>
+                <div class="mobile-story-note">
+                    <p>A handmade passion turned business.</p>
+                    <p>Art creating.</p>
+                </div>
+            </section>
+
+            <section class="mobile-story-section" aria-labelledby="mobile-journal-title">
+                <h2 id="mobile-journal-title">The Futura Free Journal</h2>
+                <div class="mobile-gallery" aria-label="Artwork gallery"></div>
+                <ul class="mobile-story-tags" aria-label="Featured work">
+                    <li>Spring / Summer ’25</li>
+                    <li>Painting, oil</li>
+                    <li>Josipa</li>
+                    <li>The custom order</li>
+                </ul>
+            </section>
+
+            <section class="mobile-story-section" aria-labelledby="mobile-reflections-title">
+                <h2 id="mobile-reflections-title">Client reflections</h2>
+                <div class="mobile-testimonials">
+                    <blockquote>
+                        <p>“Thanks again for the painting. It fits right in, I couldn’t be happier!”</p>
+                        <cite>Lisbet</cite>
+                    </blockquote>
+                    <blockquote>
+                        <p>“@futurafree.dk is so talented and so good at capturing the moods of the motive. I really fell in love with the dog portraits and a hedgehog.”</p>
+                        <cite>Camilla</cite>
+                    </blockquote>
+                    <blockquote>
+                        <p>“What an honor to have @futurafree.dk create this gorgeous portrait of me. Captured to perfection.”</p>
+                        <cite>Marv</cite>
+                    </blockquote>
+                </div>
+            </section>
+
+            <section class="mobile-story-contact" aria-labelledby="mobile-contact-title">
+                <h2 id="mobile-contact-title">Let’s communicate through art.</h2>
+                <p>Find Futura Free at @futurafree.dk</p>
+            </section>
+        </div>
+    </main>
+    <script>
+        const mobileGallery = document.querySelector(".mobile-gallery");
+        if (mobileGallery) {
+            document.querySelectorAll(".DPPJ_A").forEach((page, index) => {
+                if (index < 2 || index > 4) return;
+
+                page.querySelectorAll("._14BoqA img").forEach((sourceImage) => {
+                    const figure = document.createElement("figure");
+                    const image = sourceImage.cloneNode();
+                    image.removeAttribute("class");
+                    image.removeAttribute("style");
+                    image.alt = "Artwork from Futura Free";
+                    image.loading = "lazy";
+                    figure.append(image);
+                    mobileGallery.append(figure);
+                });
+            });
+        }
+
+        const fitPagesToViewport = () => {
+            const width = document.documentElement.clientWidth;
+
+            document.querySelectorAll(".DPPJ_A").forEach((page) => {
+                const design = page.firstElementChild;
+                if (!design) return;
+
+                const designWidth = Number.parseFloat(design.style.width);
+                const designHeight = Number.parseFloat(design.style.height);
+                if (!designWidth || !designHeight || !width) return;
+
+                const scale = width / designWidth;
+                const height = designHeight * scale;
+                page.style.setProperty("width", `${width}px`, "important");
+                page.style.setProperty("height", `${height}px`, "important");
+                design.style.setProperty("transform", `scale(${scale})`, "important");
+                design.style.transformOrigin = "0 0";
+
+                const slide = page.parentElement?.parentElement;
+                const overlay = Array.from(slide?.children ?? []).find((child) =>
+                    child.classList.contains("zEapAQ")
+                );
+                if (overlay) {
+                    overlay.style.setProperty("width", `${width}px`, "important");
+                    overlay.style.setProperty("height", `${height}px`, "important");
+                    overlay.style.overflow = "hidden";
+                }
+            });
+        };
+
+        window.addEventListener("resize", fitPagesToViewport);
+        fitPagesToViewport();
+    </script>
 </body>
 
 </html>
