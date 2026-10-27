@@ -24,7 +24,7 @@ a {
 }
 
 .page {
-    width: min(100% - 96px, 1440px);
+      width: min(100% - 96px, 1440px);
     margin: 0 auto;
 }
 
@@ -329,7 +329,6 @@ footer {
     .page {
         width: min(100% - 44px, 560px);
     }
-
     .topbar {
         min-height: 76px;
     }
@@ -387,3 +386,15 @@ footer {
         transition-duration: 0.01ms !important;
     }
 }
+
+ .storytelling-project-header {
+       width: 100%;
+    min-height: 56px;
+    margin: 0;
+    padding: 0 clamp(22px, 3.33vw, 48px);
+    position: absolute !important;
+    z-index: 3;
+    justify-content: flex-end;
+    background: #fbbb0c00 !important;
+    border-bottom: 0; 
+    }
